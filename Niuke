@@ -1,0 +1,14 @@
+# -*- coding:utf-8 -*-
+class Solution:
+    # s 源字符串
+    def replaceSpace(self, s):
+        # write code here
+        s = list(s)      #str ---  list
+        length = len(s)
+        i = 0
+        while i < length:
+            if s[i] == ' ':
+                s[i] = '%20'
+            i += 1
+        s = ''.join(s)    #list ---  str
+        return s
